@@ -1,0 +1,10 @@
+/* CSS reset */
+body, h1 {
+    margin: unset;
+}
+
+/* Design */
+
+body {
+    color: #D9D9D9;
+}
