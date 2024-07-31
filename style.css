@@ -66,3 +66,12 @@ ul {
     line-height: 48px;
     text-indent: 0.9em;
 }
+
+.contents .contents-select {
+    border-color: #759CFF;
+    color: #759CFF;
+    background-image: url(./images/check.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+
+}
