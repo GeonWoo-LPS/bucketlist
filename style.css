@@ -67,10 +67,12 @@ ul {
   margin-top: unset;
 }
 
-.contents .contents-select {
-  border-color: #759cff;
+.contents .contents-list:hover {
+  border: 2px solid #759cff;
   color: #759cff;
+  transform: scaleX(1.1);
   background-image: url(./check.svg);
   background-repeat: no-repeat;
   background-position: right 14px center;
+  transition: background-image, trasform 0.6s;
 }
