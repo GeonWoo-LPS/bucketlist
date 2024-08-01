@@ -46,8 +46,7 @@ h1 .head {
 }
 
 .contents {
-  padding-bottom: 38px;
-  margin: 0 38px;
+  padding: 0 38px 38px 38px;
 }
 
 ul {
