@@ -26,27 +26,26 @@ body {
   width: 448px;
   margin: 110px auto;
   border-radius: 20px;
-  box-sizing: border-box;
 }
 
-h1 {
+.bucketlist {
   background-color: #ffffff;
   color: #ff007a;
   font-size: 24px;
   font-weight: bold;
   border-bottom: 4px solid #d9d9d9;
-  padding: 46px 0;
+  padding: 44px 0;
   border-radius: 20px 20px 0 0;
-  margin-bottom: 40px;
 }
 
-h1 .head {
+.bucketlist .bucketlist-head {
   border-left: 8px solid #ff007a;
-  padding-left: 31px;
+  padding-left: 30px;
+  line-height: 32px;
 }
 
 .contents {
-  padding: 0 38px 38px 38px;
+  padding: 36px 38px 38px 38px;
 }
 
 ul {
@@ -57,19 +56,21 @@ ul {
   color: #888888;
   background-color: #ffffff;
   border: 4px solid #d9d9d9;
-  margin-top: 14px;
-  width: 364px;
-  height: 40px;
   border-radius: 10px;
   font-weight: bold;
-  line-height: 40px;
-  text-indent: 0.9em;
+  padding: 10px 34px 10px 10px;
+  line-height: 1.25;
+  margin-top: 14px;
+}
+
+.contents .contents-list:first-child {
+  margin-top: unset;
 }
 
 .contents .contents-select {
   border-color: #759cff;
   color: #759cff;
-  background-image: url(./images/check.png);
+  background-image: url(./check.svg);
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: right 14px center;
 }
