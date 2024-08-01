@@ -1,0 +1,111 @@
+/*RESET*/
+body, ol {
+    margin: unset;
+    padding: unset;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    margin: unset;
+    font-size: unset;
+    font-weight: unset;
+}
+
+/* Typography */
+:root {
+    font-family: "arial";
+}
+
+/* Layout */
+.l_wrapper {
+    width: 448px;
+    margin: 110px auto;
+}
+
+/* Design */
+body {
+    background-color: #d9d9d9;
+}
+
+.bucketlist {
+    background-color: #eeeeee;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.10);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.bucketlist-header {
+    background-color: white;
+    padding: 44px 0;
+    border-bottom: 4px solid #dddddd;
+}
+
+.bucketlist-header h1 {
+    color: #ff007a;
+    font-size: 24px;
+    font-weight: bold;
+    border-left: 8px solid #ff007a;
+    padding-left: 30px;
+    line-height: 32px;
+}
+
+.bucketlist-contents {
+    padding: 36px 38px 38px 38px;
+}
+
+.lists li {
+    background-color: white;
+    border: 4px solid #d9d9d9;
+    padding: 10px 34px 10px 10px;
+    line-height: 1.25;
+    color: #888888;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* 첫번째 방법 */
+.lists li {
+    margin-top: 14px;
+}
+
+.lists li:first-child {
+    margin-top: unset;
+}
+
+/* 두번째 방법
+.lists li + li {
+    margin-top: 14px;
+} */
+
+/* 세번째 방법
+.lists li:not(:first-child) {
+    margin-top: 14px;
+} */
+
+/* 네번째 방법
+.lists li:first-child ~ li {
+    margin-top: 14px;
+} */
+
+/* 다섯번째 방법: flexbox gap */
+
+/* .lists li.is_active {
+    border-color: #759cff;
+    color: #759cff;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+    background-image: url(./check.svg);
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+} */
+
+.lists li:nth-child(2) {
+    border-color: #759cff;
+    color: #759cff;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+    background-image: url(./check.svg);
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+}
